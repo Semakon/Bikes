@@ -58,7 +58,7 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
                 float speed = Math.abs(x + y + z - last_x - last_y - last_z) / diffTime * 10000;
 
                 if (speed > SHAKE_THRESHOLD) {
-                    System.out.println("Shaking");
+                    System.out.println("x: " + x + "\ny: " + y + "\nz: " + z);
                 }
 
                 last_x = x;
